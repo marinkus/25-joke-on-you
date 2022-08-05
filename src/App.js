@@ -25,10 +25,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Jokes on you</h1>
+        <h1 className='header'>Jokes on you</h1>
         <ul>
           {
-            jokes.map(j => j.joke ? <li key={j.id}>{j.joke}</li> : <li key={j.id}>{j.setup} {j.delivery}</li>)
+            jokes.map(j => j.joke ? <li className='joke' key={j.id}>{j.joke}</li> : <li className='notAJoke' key={j.id}>{j.setup} {j.delivery}</li>)
           }
         </ul>
       </header>
